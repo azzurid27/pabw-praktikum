@@ -4,11 +4,11 @@ Topik halaman saya: Daftar perlengkapan naik gunung.
 
 - Judul halaman: Persiapan Naik Gunung
 - Deskripsi: Daftar barang dan perlengkapan yang wajib untuk pendakian.
-- Tautan navigasi: Daftar Barang, Tambah Barang
+- Tautan navigasi: Daftar Barang, Tambah Barang, Profil Pendaki
 - Dua bagian utama: Tabel Perlengkapan, Form Tambah Barang
 - Kolom tabel: Nama Barang, Kategori, Berat (gram)
 - Kolom form: Nama Barang, Kategori, Jumlah
-- Gambar: tenda-merbabu.webp
+- Gambar: foto-puncak.jpg   
 
 ## Catatan penggunaan AI
-Dikerjakan dengan bantuan AI untuk panduan perbaikan error Git
+Dikerjakan dengan bantuan AI untuk panduan perbaikan error Git  
