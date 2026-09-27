@@ -31,3 +31,6 @@ Dikerjakan dengan bantuan AI untuk panduan perbaikan error Git dan penyusunan ke
 | --space-4 | 1rem | jarak standar antar elemen |
 
 Kriteria selesai saya: mengubah `--color-primary` di satu baris harus mengubah warna tombol, tautan, judul, dan garis fokus secara otomatis.
+
+## Catatan penggunaan AI
+dalam bertanya jika terdapat error dalam kode dan membantu dalam memberikan step by step jika terdapat erorr

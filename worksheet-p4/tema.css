@@ -1,19 +1,31 @@
+.sakelar-tema {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-fg);
+}
+
+#tema {
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+html.tema-gelap,
+:root.tema-gelap,
+:root:has(#tema:checked) {
+  --color-bg:      var(--gray-900);
+  --color-fg:      var(--gray-50);
+  --color-surface: #1E293B;
+  --color-border:  #64748B;
+}
+
+/* Otomatis dari sistem/OS */
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg:      var(--gray-900);
     --color-fg:      var(--gray-50);
     --color-surface: #1E293B;
-    --color-border:  #334155;
-    --color-primary: #A78BFA;
-    --color-on-primary: #0F172A;
+    --color-border:  #64748B;
   }
-}
-
-:root.tema-gelap {
-  --color-bg:      var(--gray-900);
-  --color-fg:      var(--gray-50);
-  --color-surface: #1E293B;
-  --color-border:  #64748B;
-  --color-primary: #A78BFA;
-  --color-on-primary: #0F172A;
 }
