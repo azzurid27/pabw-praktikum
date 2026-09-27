@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persiapan Naik Gunung</title>
   <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="layout.css">
   <link rel="stylesheet" href="komponen.css">
   <link rel="stylesheet" href="tema.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Persiapan Naik Gunung</title>
 </head>
 <body>
   <header>
-<header>
-  <div class="header-baris">
-    <h1>Profil Saya</h1>
-    <nav>
-      <ul>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#karya">Karya</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="header-baris">
+      <h1>Profil Saya</h1>
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#karya">Karya</a></li>
+          <li><button onclick="document.documentElement.classList.toggle('tema-gelap')">Ubah Tema</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section id="daftar-barang">
-  <h2>Tabel Perlengkapan</h2>
-  
-  <figure>
-    <img src="foto-puncak.jpg" alt="Pemandangan indah dari puncak gunung dengan langit cerah saat pendakian" width="640" height="360" loading="lazy">
-    <figcaption>Dokumentasi pendakian gunung</figcaption>
-  </figure>
-  
-  <!-- Lanjut kode tabel di bawahnya -->
+      <h2>Tabel Perlengkapan</h2>
+      
+      <figure>
+        <img src="foto-puncak.jpg" alt="Pemandangan indah dari puncak gunung dengan langit cerah saat pendakian" width="640" height="360" loading="lazy">
+        <figcaption>Dokumentasi pendakian gunung</figcaption>
+      </figure>
+      
       <table>
         <caption>Daftar barang bawaan pendakian</caption>
         <thead>
@@ -62,7 +60,6 @@
           </tr>
         </tbody>
       </table>
-      <h2>Tabel Perlengkapan</h2>
     </section>
 
     <section id="tambah-barang">

@@ -2,14 +2,18 @@
   :root {
     --color-bg:      var(--gray-900);
     --color-fg:      var(--gray-50);
-    --color-surface: #1E293B; 
-    --color-border:  #334155; 
+    --color-surface: #1E293B;
+    --color-border:  #334155;
+    --color-primary: #A78BFA;
+    --color-on-primary: #0F172A;
   }
 }
 
-.tema-gelap {
+:root.tema-gelap {
   --color-bg:      var(--gray-900);
   --color-fg:      var(--gray-50);
   --color-surface: #1E293B;
-  --color-border:  #334155;
+  --color-border:  #64748B;
+  --color-primary: #A78BFA;
+  --color-on-primary: #0F172A;
 }
