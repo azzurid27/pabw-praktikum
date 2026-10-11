@@ -37,6 +37,10 @@ dalam bertanya jika terdapat error dalam kode dan membantu dalam memberikan step
 
 ## Pertemuan 8 - Javascipt
 
+## Catatan bagian yang aku kerjakan
+Melakukan testing
+Menyusun kode
+
 ## Catatan penggunaan AI
 Pembuatan Worksheet p6 dikarena kan belum dikirim sama dosen 
 dalam bertanya jika terdapat error dalam kode dan membantu dalam memberikan step by step jika terdapat erorr
