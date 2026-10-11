@@ -1,4 +1,3 @@
-/* tema.css — tema gelap (Pertemuan 4), dipasang lewat atribut data-tema */
 :root[data-tema="gelap"] {
   --warna-latar: #0f172a;
   --warna-permukaan: #1e293b;
