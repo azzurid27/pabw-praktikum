@@ -3,7 +3,7 @@
 const namaLengkap = "Ahmad Azzuri Pakalessy";
 const peran = "Mahasiswa Informatika";
 const keahlian = ["Video Editing", "Design Graphic", "UIUX"];
-const jumlahProyek = 3;
+const jumlahProyek = 6;
 
 let filterAktif = "semua"; 
 
@@ -15,9 +15,20 @@ const profil = {
   nama: namaLengkap,
   peran: peran,
   keahlian: keahlian,
-  alamat: {
-  }
+  alamat: {}
 };
 
 const kota = profil.alamat?.kota ?? "Ternate";
 console.log(`Kota asal: ${kota}`);
+
+
+// LEMBAR C
+
+function buatPerkenalan({ nama, peran }) {
+  return `${nama} — ${peran}`;
+}
+
+const formatKeahlian = (daftar) => daftar.join(" · ");
+
+console.log(buatPerkenalan(profil));
+console.log(formatKeahlian(profil.keahlian));
