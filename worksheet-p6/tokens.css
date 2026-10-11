@@ -1,0 +1,22 @@
+/* tokens.css — token desain dari Pertemuan 4 */
+:root {
+  /* jarak */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+
+  /* warna (tema terang) */
+  --warna-latar: #f8fafc;
+  --warna-permukaan: #ffffff;
+  --warna-teks: #0f172a;
+  --warna-teks-lembut: #475569;
+  --warna-aksen: #2563eb;
+  --warna-aksen-teks: #ffffff;
+  --warna-garis: #cbd5e1;
+
+  /* bentuk */
+  --radius: 0.5rem;
+}

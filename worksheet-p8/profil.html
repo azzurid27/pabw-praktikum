@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa — Worksheet P8</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="navbar">
+      <span class="navbar__logo">&lt;/&gt;</span>
+      <h1 class="navbar__judul">Profil Mahasiswa SIF302</h1>
+      <nav aria-label="Menu utama">
+        <ul class="navbar__menu">
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#nilai">Nilai</a></li>
+          <li><button class="tombol tombol--garis" id="tema-tombol" type="button">Tema</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Baris 2: isi (sidebar + konten) -->
+    <main class="isi content">
+      <aside class="sisi">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#galeri">Galeri adaptif</a></li>
+          <li><a href="#proyek">Galeri titik henti</a></li>
+          <li><a href="#nilai">Tabel nilai</a></li>
+        </ul>
+      </aside>
+
+      <div class="utama">
+        <section class="bagian">
+          <h2>Tentang saya</h2>
+          <p>Halo! Perkenalkan Namaku Ahmad Azzuri Pakalessy. Saya adalah Mahasiswa Semester 3, Jurusan Informatika Universitas Islam Indonesia. </p>
+          <img src="image.png" alt="Gambar contoh berlebar 900 piksel" width="200" height="200">
+        </section>
+
+        <section class="bagian" id="galeri">
+          <h2>Galeri adaptif (P5)</h2>
+          <div class="galeri">
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Kartu Satu</h3>
+                <p>Deskripsi singkat kartu pertama.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">HTML</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Kartu Dua dengan Judul yang Sangat Panjang Sekali Supayaterujiwrapteks</h3>
+                <p>Isi yang lebih panjang untuk menguji tinggi kartu dan pembungkusan teks pada layar sempit.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">CSS</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Kartu Tiga</h3>
+                <p>Deskripsi singkat.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Flexbox</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Kartu Empat</h3>
+                <p>Deskripsi singkat.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Grid</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- P6: galeri 1 kolom, 2 kolom (48rem), 3 kolom (60rem) -->
+        <section class="bagian" id="proyek">
+          <h2>Galeri titik henti (P6)</h2>
+          <div class="grid">
+            <article class="kartu sorotan">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Proyek Sorotan</h3>
+                <p>Blok ini memakai span 2 pada layar tablet ke atas.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Unggulan</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Proyek B</h3>
+                <p>Deskripsi singkat.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Web</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Proyek C</h3>
+                <p>Deskripsi singkat.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Web</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Proyek D</h3>
+                <p>Deskripsi singkat.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Web</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Proyek E</h3>
+                <p>Deskripsi singkat.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Web</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="gambar.svg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Proyek F</h3>
+                <p>Deskripsi singkat.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Web</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Tabel lebar: bergulir sendiri -->
+        <section class="bagian" id="nilai">
+          <h2>Tabel nilai</h2>
+          <div class="table-wrap">
+            <table class="tabel">
+              <thead>
+                <tr>
+                  <th>Pertemuan</th><th>Topik</th><th>Perkakas</th><th>Status</th><th>Nilai</th><th>Catatan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>P4</td><td>CSS Token dan Tema</td><td>VS Code</td><td>Selesai</td><td>—</td><td>Tema gelap berfungsi</td></tr>
+                <tr><td>P5</td><td>Flexbox dan Grid</td><td>DevTools</td><td>Selesai</td><td>—</td><td>Galeri auto-fit</td></tr>
+                <tr><td>P6</td><td>Responsif Mobile-First</td><td>Mode perangkat</td><td>Selesai</td><td>—</td><td>Diuji tiga lebar</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Baris 3: kaki halaman -->
+    <footer class="kaki">
+      <p>Worksheet P6 · Responsif Mobile-First · SIF302</p>
+    </footer>
+  </div>
+
+  <script>
+    var tombol = document.getElementById("tema-tombol");
+    var akar = document.documentElement;
+    try {
+      var tersimpan = localStorage.getItem("tema");
+      if (tersimpan) { akar.dataset.tema = tersimpan; }
+    } catch (e) {}
+    tombol.addEventListener("click", function () {
+      var baru = akar.dataset.tema === "gelap" ? "terang" : "gelap";
+      akar.dataset.tema = baru;
+      try { localStorage.setItem("tema", baru); } catch (e) {}
+    });
+  </script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
