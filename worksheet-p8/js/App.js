@@ -33,8 +33,6 @@ const formatKeahlian = (daftar) => daftar.join(" · ");
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
 
-//Lembar Kerja D
-
 // Lembar Kerja D
 
 const daftarproyek = [
