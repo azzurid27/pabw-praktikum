@@ -6,7 +6,6 @@ const emptyMsg = document.querySelector("#empty-message");
 const form = document.querySelector("#contact-form");
 const inputNama = document.querySelector("#nama");
 const errorNama = document.querySelector("#error-nama");
-const btnSubmit = document.querySelector("#submit-btn");
 
 function buildCard(project) {
   const article = document.createElement("article");
@@ -46,6 +45,7 @@ function buildCard(project) {
 
   return article;
 }
+
 function render(list) {
   container.textContent = "";
 
@@ -82,15 +82,12 @@ filterRow.addEventListener("click", (event) => {
 
 inputNama.addEventListener("input", () => {
   const value = inputNama.value.trim();
-
   if (value === "") {
     errorNama.style.display = "block";
     inputNama.setAttribute("aria-invalid", "true");
-    btnSubmit.disabled = true;
   } else {
     errorNama.style.display = "none";
     inputNama.removeAttribute("aria-invalid");
-    btnSubmit.disabled = false;
   }
 });
 
@@ -115,7 +112,6 @@ form.addEventListener("submit", (event) => {
   render(projects);
 
   form.reset();
-  btnSubmit.disabled = true;
 });
 
 render(projects);

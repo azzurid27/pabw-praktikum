@@ -44,3 +44,13 @@ Menyusun kode
 ## Catatan penggunaan AI
 Pembuatan Worksheet p6 dikarena kan belum dikirim sama dosen 
 dalam bertanya jika terdapat error dalam kode dan membantu dalam memberikan step by step jika terdapat erorr
+
+## Pertemuan 9 - Dom
+
+## Catatan bagian yang aku kerjakan
+Melakukan testing
+Menyusun kode
+Memperbaiki bug/error sebelum di kasih ke AI
+
+## Catatan penggunaan AI 
+dalam bertanya jika terdapat error dalam kode dan membantu dalam memberikan step by step jika terdapat erorr dan AI membantu dalam menjelaskan Docs yang di kasih dan dalam memahami pertanyaan

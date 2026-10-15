@@ -7,7 +7,7 @@ export const projects = [
   },
   {
     title: "Feed Statistika Magister",
-    description: "Design untuk Statistika Magister",
+    description: "Design u  ntuk Statistika Magister",
     category: "Design",
     image: "asset/Konsentrasi BISA & SDSB - 2.jpg"
   },
