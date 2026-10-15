@@ -1,0 +1,78 @@
+/* layout.css — Pertemuan 5: kerangka halaman = grid, baris = flex */
+
+/* Kerangka: tiga baris (kepala, isi, kaki) */
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;  /* cadangan */
+  min-height: 100dvh; /* tetap menempel saat bilah alamat ponsel bergerak */
+}
+
+/* Navbar: flex, jarak memakai gap */
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* supaya tidak meluber di layar sempit */
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--warna-permukaan);
+  border-bottom: 1px solid var(--warna-garis);
+}
+
+.navbar__logo {
+  font-weight: 700;
+  color: var(--warna-aksen);
+}
+
+.navbar__judul {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 1.125rem;
+  overflow-wrap: anywhere;
+}
+
+.navbar__menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+/* Area isi: jumlah kolom ditentukan di responsif.css (mobile-first).
+   Sebelumnya di P5: grid-template-columns: 16rem 1fr; */
+.isi {
+  padding: var(--space-4);
+  align-content: start;
+}
+
+/* Sidebar: daftar menu kolom (sumbu utama vertikal) */
+.sisi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-self: start;
+  padding: var(--space-4);
+  background: var(--warna-permukaan);
+  border: 1px solid var(--warna-garis);
+  border-radius: var(--radius);
+}
+
+.sisi ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.utama {
+  min-width: 0; /* teks/tabel panjang tidak melebarkan kolom */
+}
+
+.kaki {
+  padding: var(--space-4);
+  text-align: center;
+  color: var(--warna-teks-lembut);
+  border-top: 1px solid var(--warna-garis);
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa — Worksheet P8</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="navbar">
+      <span class="navbar__logo">&lt;/&gt;</span>
+      <h1 class="navbar__judul">Profil Mahasiswa SIF302</h1>
+      <nav aria-label="Menu utama">
+        <ul class="navbar__menu">
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#nilai">Nilai</a></li>
+          <li><button class="tombol tombol--garis" id="tema-tombol" type="button">Tema</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Baris 2: isi (sidebar + konten) -->
+    <main class="isi content">
+      <aside class="sisi">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#galeri">Galeri adaptif</a></li>
+          <li><a href="#proyek">Galeri titik henti</a></li>
+          <li><a href="#nilai">Tabel nilai</a></li>
+        </ul>
+      </aside>
+
+      <div class="utama">
+        <section class="bagian">
+          <h2>Tentang saya</h2>
+          <p>Halo! Perkenalkan Namaku Ahmad Azzuri Pakalessy. Saya adalah Mahasiswa Semester 3, Jurusan Informatika Universitas Islam Indonesia. </p>
+          <img src="image.png" alt="Gambar contoh berlebar 900 piksel" width="200" height="200">
+        </section>
+
+        <section class="bagian" id="galeri">
+          <h2>Galeri adaptif (P5)</h2>
+          <div class="galeri">
+            <article class="kartu">
+              <img class="kartu__gambar" src="HTML5.png" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">HTML5</h3>
+                <p>HTML5 adalah versi terbaru dari HTML yang digunakan untuk membuat website modern, interaktif, dan responsif, dengan dukungan multimedia tanpa plugin tambahan.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">HTML</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="CSS3.png" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">CSS3</h3>
+                <p>CSS3 (Cascading Style Sheets 3) adalah versi terbaru dari CSS yang dirancang untuk mendukung perkembangan teknologi web yang lebih pesat. CSS3 menawarkan berbagai fitur baru, termasuk.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">CSS</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="FLEXbox.png" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Flexbox</h3>
+                <p>Flexbox adalah model layout CSS yang memungkinkan pengaturan elemen secara fleksibel dalam satu arah, baik horizontal maupun vertikal, untuk membuat layout responsif dan rapi.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Flexbox</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="GRID.webp" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Grid</h3>
+                <p>Grid adalah pola garis yang membentuk kisi-kisi atau jaringan, digunakan untuk menyusun elemen secara teratur dalam berbagai konteks seperti desain, peta, listrik, dan fotografi.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Grid</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="bagian" id="proyek">
+          <h2>Galeri titik henti (P6)</h2>
+          <div class="grid">
+            <article class="kartu sorotan">
+              <img class="kartu__gambar" src="PANCASILA.jpg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">PANCASILA</h3>
+                <p>Design Feed untuk Instagram FTI UII hari Pancasila</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">FTI</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="Konsentrasi BISA & SDSB - 2.jpg" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Feed Statistika Magister</h3>
+                <p>Design untuk Statistika Magister</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Statistika</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="Davinci.png" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">Editing Video</h3>
+                <p>Mengedit video</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">AMV</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="UIUX KALA.png" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">UIUX - Kala</h3>
+                <p>UIUX - Kala. Aplikasih berbasis AI yang mentrack mood sehari hari.</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Web</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="UIUX - HealthSync.png" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">UIUX - HealthSync</h3>
+                <p>Aplikasih kesehatan</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">HealthSync</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+            <article class="kartu">
+              <img class="kartu__gambar" src="Siskamling.png" alt="">
+              <div class="kartu__isi">
+                <h3 class="kartu__judul">UIUX - Siskamling</h3>
+                <p>UIUX - Siskamling. Aplikasih untuk masyaratkat</p>
+              </div>
+              <div class="kartu__kaki">
+                <span class="label">Web</span>
+                <a class="tombol" href="#">Buka</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Tabel lebar: bergulir sendiri -->
+        <section class="bagian" id="nilai">
+          <h2>Tabel nilai</h2>
+          <div class="table-wrap">
+            <table class="tabel">
+              <thead>
+                <tr>
+                  <th>Pertemuan</th><th>Topik</th><th>Perkakas</th><th>Status</th><th>Nilai</th><th>Catatan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>P4</td><td>CSS Token dan Tema</td><td>VS Code</td><td>Selesai</td><td>—</td><td>Tema gelap berfungsi</td></tr>
+                <tr><td>P5</td><td>Flexbox dan Grid</td><td>DevTools</td><td>Selesai</td><td>—</td><td>Galeri auto-fit</td></tr>
+                <tr><td>P6</td><td>Responsif Mobile-First</td><td>Mode perangkat</td><td>Selesai</td><td>—</td><td>Diuji tiga lebar</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Baris 3: kaki halaman -->
+    <footer class="kaki">
+      <p>Worksheet P6 · Responsif Mobile-First · SIF302</p>
+    </footer>
+  </div>
+
+  <script>
+    var tombol = document.getElementById("tema-tombol");
+    var akar = document.documentElement;
+    try {
+      var tersimpan = localStorage.getItem("tema");
+      if (tersimpan) { akar.dataset.tema = tersimpan; }
+    } catch (e) {}
+    tombol.addEventListener("click", function () {
+      var baru = akar.dataset.tema === "gelap" ? "terang" : "gelap";
+      akar.dataset.tema = baru;
+      try { localStorage.setItem("tema", baru); } catch (e) {}
+    });
+  </script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

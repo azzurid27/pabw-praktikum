@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persiapan Naik Gunung</title>
+</head>
+<body>
+  <header>
+    <h1>Persiapan Naik Gunung</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#daftar-barang">Daftar Barang</a></li>
+        <li><a href="#tambah-barang">Tambah Barang</a></li>
+        <li><a href="#profil-pendaki">Profil Pendaki</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="daftar-barang">
+  <h2>Tabel Perlengkapan</h2>
+  
+  <figure>
+    <img src="foto-puncak.jpg" alt="Pemandangan indah dari puncak gunung dengan langit cerah saat pendakian" width="640" height="360" loading="lazy">
+    <figcaption>Dokumentasi pendakian gunung</figcaption>
+  </figure>
+  
+  <!-- Lanjut kode tabel di bawahnya -->
+      <table>
+        <caption>Daftar barang bawaan pendakian</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nama Barang</th>
+            <th scope="col">Kategori</th>
+            <th scope="col">Berat (gram)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Tenda Dome 2P</th>
+            <td>Kelompok</td>
+            <td>2500</td>   
+          </tr>
+          <tr>
+            <th scope="row">Sleeping Bag</th>
+            <td>Pribadi</td>
+            <td>800</td>
+          </tr>
+          <tr>
+            <th scope="row">Nesting (Alat Masak)</th>
+            <td>Kelompok</td>
+            <td>600</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Tabel Perlengkapan</h2>
+    </section>
+
+    <section id="tambah-barang">
+      <h2>Form Tambah Barang</h2>
+      <form action="/simpan" method="post">
+        <p>
+          <label for="nama-barang">Nama Barang:</label>
+          <input type="text" id="nama-barang" name="nama-barang" required>
+        </p>
+        <p>
+          <label for="kategori">Kategori:</label>
+          <select id="kategori" name="kategori">
+            <option value="pribadi">Pribadi</option>
+            <option value="kelompok">Kelompok</option>
+          </select>
+        </p>
+        <p>
+          <label for="jumlah">Jumlah:</label>
+          <input type="number" id="jumlah" name="jumlah" min="1" value="1" required>
+        </p>
+        <button type="submit">Tambah Barang</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ahmad Azzuri Pakalessy · 25523120 · 2026</p>
+  </footer>
+</body>
+</html>
