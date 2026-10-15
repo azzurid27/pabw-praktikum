@@ -25,7 +25,7 @@ function buildCard(project) {
   judul.textContent = project.title;
 
   const deskripsi = document.createElement("p");
-  deskripsi.textContent = project.description;
+  deskripsi.textContent = project.description || "";
 
   isi.append(judul, deskripsi);
 
@@ -49,7 +49,7 @@ function buildCard(project) {
 function render(list) {
   container.textContent = "";
 
-  if (list.length === 0) {
+  if (!list || list.length === 0) {
     emptyMsg.hidden = false;
     return;
   }
@@ -72,7 +72,6 @@ filterRow.addEventListener("click", (event) => {
   if (!button) return;
 
   const category = button.dataset.category;
-
   const selected = projects.filter(
     (project) => category === "all" || project.category === category
   );
@@ -94,16 +93,27 @@ inputNama.addEventListener("input", () => {
     btnSubmit.disabled = false;
   }
 });
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const value = inputNama.value.trim();
   if (value === "") {
+    errorNama.style.display = "block";
     inputNama.focus();
     return;
   }
 
-  alert(`Proyek "${value}" berhasil dikirim!`);
+  const newProject = {
+    title: value,
+    description: "Proyek baru dari form",
+    category: "Web",
+    image: "asset/image.png"
+  };
+
+  projects.push(newProject);
+  render(projects);
+
   form.reset();
   btnSubmit.disabled = true;
 });
