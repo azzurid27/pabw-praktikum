@@ -37,3 +37,15 @@ export const projects = [
     image: "asset/Siskamling.png"
   }
 ];
+import { fetchNews } from './api.js';
+
+async function init() {
+    try {
+        const data = await fetchNews();
+        console.log("Berhasil memuat:", data);
+    } catch (error) {
+        console.error("Error ditangkap di app.js:", error.message);
+    }
+}
+
+init();
