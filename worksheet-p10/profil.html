@@ -1,0 +1,152 @@
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa — Worksheet P9</title>
+
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
+    <link rel="stylesheet" href="responsif.css">
+    <link rel="icon" href="data:,"> 
+  </head>
+  <body>
+    <div class="page">
+
+      <header class="navbar">
+        <span class="navbar__logo">&lt;/&gt;</span>
+        <h1 class="navbar__judul">Profil Mahasiswa SIF302</h1>
+        <nav aria-label="Menu utama">
+          <ul class="navbar__menu">
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#nilai">Nilai</a></li>
+            <li><button class="tombol tombol--garis" id="tema-tombol" type="button">Tema</button></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="isi content">
+        <aside class="sisi">
+          <h2>Menu</h2>
+          <ul>
+            <li><a href="#galeri">Galeri adaptif</a></li>
+            <li><a href="#proyek">Daftar Proyek Dinamis</a></li>
+            <li><a href="#nilai">Tabel nilai</a></li>
+            <li><a href="#kontak">Hubungi Saya</a></li>
+          </ul>
+        </aside>
+
+        <div class="utama">
+          <section class="bagian">
+            <h2>Tentang saya</h2>
+            <p>Halo! Perkenalkan Namaku Ahmad Azzuri Pakalessy. Saya adalah Mahasiswa Semester 3, Jurusan Informatika Universitas Islam Indonesia. </p>
+            <img src="asset/image.png" alt="Foto Ahmad Azzuri" width="200" height="200">
+          </section>
+
+          <section class="bagian" id="galeri">
+            <h2>Galeri adaptif (P5)</h2>
+            <div class="galeri">
+              <article class="kartu">
+                <img class="kartu__gambar" src="asset/HTML5.png" alt="">
+                <div class="kartu__isi">
+                  <h3 class="kartu__judul">HTML5</h3>
+                  <p>HTML5 adalah versi terbaru dari HTML yang digunakan untuk membuat website modern, interaktif, dan responsif, dengan dukungan multimedia tanpa plugin tambahan.</p>
+                </div>
+                <div class="kartu__kaki">
+                  <span class="label">HTML</span>
+                  <a class="tombol" href="#">Buka</a>
+                </div>
+              </article>
+              <article class="kartu">
+                <img class="kartu__gambar" src="asset/CSS3.png" alt="">
+                <div class="kartu__isi">
+                  <h3 class="kartu__judul">CSS3</h3>
+                  <p>CSS3 (Cascading Style Sheets 3) adalah versi terbaru dari CSS yang dirancang untuk mendukung perkembangan teknologi web yang lebih pesat. CSS3 menawarkan berbagai fitur baru, termasuk.</p>
+                </div>
+                <div class="kartu__kaki">
+                  <span class="label">CSS</span>
+                  <a class="tombol" href="#">Buka</a>
+                </div>
+              </article>
+              <article class="kartu">
+                <img class="kartu__gambar" src="asset/FLEXbox.png" alt="">
+                <div class="kartu__isi">
+                  <h3 class="kartu__judul">Flexbox</h3>
+                  <p>Flexbox adalah model layout CSS yang memungkinkan pengaturan elemen secara fleksibel dalam satu arah, baik horizontal maupun vertikal, untuk membuat layout responsif dan rapi.</p>
+                </div>
+                <div class="kartu__kaki">
+                  <span class="label">Flexbox</span>
+                  <a class="tombol" href="#">Buka</a>
+                </div>
+              </article>
+              <article class="kartu">
+                <img class="kartu__gambar" src="asset/GRID.webp" alt="">
+                <div class="kartu__isi">
+                  <h3 class="kartu__judul">Grid</h3>
+                  <p>Grid adalah pola garis yang membentuk kisi-kisi atau jaringan, digunakan untuk menyusun elemen secara teratur dalam berbagai konteks seperti desain, peta, listrik, dan fotografi.</p>
+                </div>
+                <div class="kartu__kaki">
+                  <span class="label">Grid</span>
+                  <a class="tombol" href="#">Buka</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="bagian" id="proyek">
+            <h2>Daftar Proyek (Dinamis - P9)</h2>
+            
+            <div id="filter-btn-row" style="margin-bottom: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <button class="tombol filter-btn" data-category="all">Semua</button>
+              <button class="tombol filter-btn" data-category="Design">Design</button>
+              <button class="tombol filter-btn" data-category="UIUX">UI/UX</button>
+              <button class="tombol filter-btn" data-category="Video">Video</button>
+            </div>
+
+            <div class="grid" id="project-list"></div>
+
+            <p id="empty-message" hidden>Tidak ada proyek dalam kategori ini.</p>
+          </section>
+
+          <section class="bagian" id="kontak">
+            <h2>Hubungi Saya (Validasi Form - P9)</h2>
+            <form id="contact-form">
+              <div style="margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <label for="nama">Nama Proyek Baru:</label>
+                <input type="text" id="nama" name="nama" style="padding: 0.5rem;">
+                <span class="error-msg" id="error-nama" style="color: red; display: none;">Nama tidak boleh kosong atau hanya berisi spasi.</span>
+              </div>
+              <button type="submit" class="tombol" id="submit-btn">Kirim</button>
+            </form>
+          </section>
+
+        </div>
+      </main>
+
+      <footer class="kaki">
+        <p>Worksheet P9 · DOM, Events, and Interactivity</p>
+      </footer>
+    </div>
+
+    <script>
+      var tombol = document.getElementById("tema-tombol");
+      var akar = document.documentElement;
+      try {
+        var tersimpan = localStorage.getItem("tema");
+        if (tersimpan) { akar.dataset.tema = tersimpan; }
+      } catch (e) {}
+      tombol.addEventListener("click", function () {
+        var baru = akar.dataset.tema === "gelap" ? "terang" : "gelap";
+        akar.dataset.tema = baru;
+        try { localStorage.setItem("tema", baru); } catch (e) {}
+      });
+    </script>
+    
+    <script type="module" src="js/App.js"></script>
+    <script type="module" src="js/dom.js"></script>
+  </body>
+  </html>
