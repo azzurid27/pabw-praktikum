@@ -44,7 +44,7 @@ import { fetchNews } from './api.js';
 async function init() {
     try {
         const data = await fetchNews();
-        console.log("Berhasil memuat:", data);
+        render(data); 
     } catch (error) {
         console.error("Error ditangkap di App.js:", error.message);
     }
@@ -65,3 +65,4 @@ function render(list) {
     container.appendChild(card);
   });
 }
+window.render = render;
