@@ -54,3 +54,13 @@ Memperbaiki bug/error sebelum di kasih ke AI
 
 ## Catatan penggunaan AI 
 dalam bertanya jika terdapat error dalam kode dan membantu dalam memberikan step by step jika terdapat erorr dan AI membantu dalam menjelaskan Docs yang di kasih dan dalam memahami pertanyaan
+
+## Pertemuan 10
+
+## Catatan bagian yang aku kerjakan
+Melakukan testing
+Menyusun kode
+Memperbaiki bug/error sebelum di kasih ke AI
+
+## Catatan penggunaan AI 
+dalam bertanya jika terdapat error dalam kode dan membantu dalam memberikan step by step jika terdapat erorr dan AI membantu dalam menjelaskan Docs yang di kasih dan dalam memahami pertanyaan
